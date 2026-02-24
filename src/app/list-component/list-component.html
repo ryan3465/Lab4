@@ -1,6 +1,6 @@
 <p></p>
 
-
+<!-- Using *ngFor directive to loop through presidents array -->
 <ul>
     <li *ngFor = "let president of presidents">
         {{president}}</li>
@@ -12,6 +12,9 @@
     }
 </ol>
 -->
+
+<!-- New @for syntax looping through mypresidents array -->
+<!-- Each item p is an object with name and term properties -->
 <ul>
         @for(p of mypresidents;track p.name){
             <li>{{p.name}}, {{p.term}}</li>
